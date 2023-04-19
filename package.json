@@ -4,7 +4,7 @@
   "description": "sample test code for git",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run -s .\\cypress\\e2e\\login.js"
   },
   "author": "",
   "license": "ISC",
