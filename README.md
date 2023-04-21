@@ -12,3 +12,7 @@ git push -u origin main
 git remote add origin https://github.com/sudo-anji-github/BDD_Cypress.git
 git branch -M main
 git push -u origin main
+
+# To run the sample test
+
+npm test
