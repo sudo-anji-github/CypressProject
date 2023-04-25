@@ -4,7 +4,8 @@
   "description": "sample test code for git",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run -s .\\cypress\\e2e\\api_spec.js"
+    "testapi": "cypress run -s .\\cypress\\e2e\\api_spec.js"
+    "testui":"cypress run -s .\\cypress\\e2e\\login.js"
   },
   "author": "anji",
   "license": "ISC",
