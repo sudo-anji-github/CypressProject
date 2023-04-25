@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test_all": "cypress run test_api && cypress run test_ui",
-    "cypress:api": "cypress run -s .\\cypress\\e2e\\api_spec.js",
-    "cypress:chrome": "cypress run --browser chrome -s .\\cypress\\e2e\\login.js",
-    "cypress:edge": "cypress run --browser edge -s .\\cypress\\e2e\\login.js",
-    "cypress:firefox": "cypress run --browser firefox -s .\\cypress\\e2e\\login.js",
+    "API": "cypress run -s .\\cypress\\e2e\\api_spec.js",
+    "Chrome": "cypress run --browser chrome -s .\\cypress\\e2e\\login.js",
+    "Edge": "cypress run --browser edge -s .\\cypress\\e2e\\login.js",
+    "Firefox": "cypress run --browser firefox -s .\\cypress\\e2e\\login.js",
     "test_ui": "cypress run -s .\\cypress\\e2e\\login.js"
   },
   "author": "anji",
