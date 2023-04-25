@@ -4,7 +4,9 @@
   "description": "sample test code for git",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run -s .\\cypress\\e2e\\api_spec.js"
+    "test_all": "cypress run test_api && cypress run test_ui",
+    "test_api": "cypress run -s .\\cypress\\e2e\\api_spec.js",
+    "test_ui": "cypress run -s .\\cypress\\e2e\\login.js"
   },
   "author": "anji",
   "license": "ISC",
