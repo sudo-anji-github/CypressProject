@@ -7,5 +7,6 @@ module.exports = defineConfig({
       require('cypress-mochawesome-reporter/plugin')(on);
     },
     specPattern: "cypress/e2e/*.js",
+    baseUrl: "https://reqres.in/api"
   },
 });
