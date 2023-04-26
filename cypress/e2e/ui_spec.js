@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe(' CyPress_Shravan_DemoQA', () => {
+describe(' Cypress Shravan_Demo QA UI Cases', () => {
     Cypress.on('uncaught:exception', (err, runnable) => {
       // returning false here prevents Cypress from
       // failing the test
@@ -58,7 +58,7 @@ describe(' CyPress_Shravan_DemoQA', () => {
     
     
     })
-    describe(' CyPress_Tanveer_ DemoQA', () => {
+    describe('Cypress Tanveer_Demo QA UI cases', () => {
     //////////////////////////////////////Tanveer///////////////////////////////////////////////////////////////////////////////
     it('textbox validation', () => {
       cy.visit("https://demoqa.com/text-box")
@@ -114,7 +114,7 @@ describe(' CyPress_Shravan_DemoQA', () => {
       cy.get('#autocomplete').should('have.value','India')
     })
     })
-    describe(' CyPress_Nisha_DemoQA', () => {
+    describe('Cypress Nisha Demo QA UI Cases', () => {
     //////////////////////////////////////Nisha///////////////////////////////////////////////////////////////////////////////
     it('Alert 1', () => {
       cy.visit('https://demoqa.com/')

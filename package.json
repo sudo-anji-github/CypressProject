@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "Test_All_WebUI_API": "cypress run Test_only_WebUI && cypress run Test_only_API",
-    "Test_under_Chrome": "cypress run --browser chrome -s .\\cypress\\e2e\\ui_spec.js",
+    "Test_under_Chrome": "cypress run --browser chrome --headed -s .\\cypress\\e2e\\ui_spec.js",
     "Test_under_Edge": "cypress run --browser edge -s .\\cypress\\e2e\\ui_spec.js",
     "Test_under_Firefox": "cypress run --browser firefox -s .\\cypress\\e2e\\ui_spec.js",
     "Test_only_WebUI": "cypress run -s .\\cypress\\e2e\\ui_spec.js",
