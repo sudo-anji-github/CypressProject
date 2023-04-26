@@ -22,6 +22,10 @@
 
 ## Where to find the HTML report files:
 -  We can find the index.html files under this directory to see the html report - cypress/reports/
+![image](https://user-images.githubusercontent.com/56149368/234646168-a9698d3b-a870-4621-b11e-43fb17ff3eab.png)
+
+![image](https://user-images.githubusercontent.com/56149368/234645621-55d795a0-a798-45a2-8034-f3c2566e6901.png)
+
 
 #### Note:
 Under the fixtures (cypress/fixtures) directory add Test.txt file if you see any issue one of the UI Test case.
