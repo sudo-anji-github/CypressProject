@@ -1,4 +1,4 @@
-# Sample Cypress -UI and API code
+# Sample Cypress POC -UI and API code
 
 ## Steps to execute this Cypress code in local machine
 - Install node js and visual studio code into your local machine.
