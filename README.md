@@ -58,7 +58,7 @@ Cypress.config.js:
 
 const cypress = require("cypress");\
 const { defineConfig } = require("cypress");\
-const allureWriter = require('@shelex/cypress-allure-plugin/writer');\
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 
 module.exports = defineConfig({\
   e2e: {\
@@ -68,7 +68,7 @@ module.exports = defineConfig({\
     },\
     specPattern:"cypress/e2e/*"\
   },\
-});\
+});
 
 
 
