@@ -44,8 +44,8 @@ npm install -g allure-commandline --save-dev
 Package.json:
 
  "scripts": {
-    "ui-regression-allure": "cypress run --browser chrome --spec cypress/e2e/**.js --env allure=true",
-    "allure:report": "allure generate allure-results --clean -o allure-report"
+    "ui-regression-allure": "cypress run --browser chrome --spec cypress/e2e/**.js --env allure=true",\
+    "allure:report": "allure generate allure-results --clean -o allure-report"\
   },
 
 
@@ -56,19 +56,19 @@ import '@shelex/cypress-allure-plugin';
 
 Cypress.config.js:
 
-const cypress = require("cypress");
-const { defineConfig } = require("cypress");
-const allureWriter = require('@shelex/cypress-allure-plugin/writer');
+const cypress = require("cypress");\
+const { defineConfig } = require("cypress");\
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');\
 
-module.exports = defineConfig({
-  e2e: {
-    setupNodeEvents(on, config) {
-      allureWriter(on, config);
-      return config;
-    },
-    specPattern:"cypress/e2e/*"
-  },
-});
+module.exports = defineConfig({\
+  e2e: {\
+    setupNodeEvents(on, config) {\
+      allureWriter(on, config);\
+      return config;\
+    },\
+    specPattern:"cypress/e2e/*"\
+  },\
+});\
 
 
 
