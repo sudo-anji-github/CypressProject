@@ -31,3 +31,60 @@
 Under the fixtures (cypress/fixtures) directory add Test.txt file if you see any issue one of the UI Test case.
 
 
+## ------------------
+# Allure report generation:
+
+npm i -D @shelex/cypress-allure-plugin
+
+npm install -g allure-commandline --save-dev
+
+#### Note: if we get any persmission issue: sudo chown -R $USER /usr/local/lib/node_modules
+
+
+Package.json:
+
+ "scripts": {
+    "ui-regression-allure": "cypress run --browser chrome --spec cypress/e2e/**.js --env allure=true",
+    "allure:report": "allure generate allure-results --clean -o allure-report"
+  },
+
+
+Support/e2e.js:
+
+import '@shelex/cypress-allure-plugin';
+
+
+Cypress.config.js:
+
+const cypress = require("cypress");
+const { defineConfig } = require("cypress");
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');
+
+module.exports = defineConfig({
+  e2e: {
+    setupNodeEvents(on, config) {
+      allureWriter(on, config);
+      return config;
+    },
+    specPattern:"cypress/e2e/*"
+  },
+});
+
+
+
+ npm run ui-regression-allure
+
+npm run allure:report
+
+allure open
+
+
+
+
+### References:
+
+https://www.youtube.com/watch?v=lZg3kUhvXYE
+
+https://www.npmjs.com/package/@shelex/cypress-allure-plugin
+
+https://www.npmjs.com/package/allure-commandline
